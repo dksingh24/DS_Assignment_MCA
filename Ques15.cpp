@@ -1,3 +1,9 @@
+/*
+15. Show how to implement one stack efficiently using two queues. Analyse the running
+    time of stack operations.
+*/
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
