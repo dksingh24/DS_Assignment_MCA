@@ -51,6 +51,22 @@ void print(node *head){
     cout<<endl;
 }
 
+int get_rootEle2(node *head){
+    node *temp = head;
+    int c=0;
+    while(temp != NULL){
+        temp = temp -> next;
+        c++;
+    }
+    c = sqrt(c);
+    temp = head;
+    while(c--){
+        temp = temp -> next;
+    }
+    return temp ->data;
+}
+
+/*
 int get_rootEle(node *temp){
     while(temp -> next != NULL){
         temp = temp -> next;
@@ -58,6 +74,7 @@ int get_rootEle(node *temp){
     return temp -> data;
 
 }
+*/
 
 int main(){
     node *head= new node;
